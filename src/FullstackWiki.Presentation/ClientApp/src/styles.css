@@ -1,6 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* Provide sufficient contrast against white background */
+:root{
+  --main-background-color: #101010;
+  --main-foreground-color: #e7dfdd;
+  --border-color: #95A1F9
+  --active-color: #F2F1F2
+}
 a {
   color: #0366d6;
 }
@@ -18,3 +24,23 @@ code {
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+html {
+  background-color: var(--main-background-color);
+  color: var(--main-foreground-color);
+  
+}
+
+body {
+  background-color: var(--main-background-color);
+  color: var(--main-foreground-color);
+}
+
+p, h1, h2, h3, h4 {
+  color: var(--main-foreground-color);
+}
+
+
