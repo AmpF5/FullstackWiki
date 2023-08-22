@@ -1,0 +1,12 @@
+C:\Users\User\source\Projects\FullstackWiki\src\FullstackWiki.Domain\bin\Debug\net7.0\FullstackWiki.Domain.deps.json
+C:\Users\User\source\Projects\FullstackWiki\src\FullstackWiki.Domain\bin\Debug\net7.0\FullstackWiki.Domain.dll
+C:\Users\User\source\Projects\FullstackWiki\src\FullstackWiki.Domain\bin\Debug\net7.0\FullstackWiki.Domain.pdb
+C:\Users\User\source\Projects\FullstackWiki\src\FullstackWiki.Domain\obj\Debug\net7.0\FullstackWiki.Domain.csproj.AssemblyReference.cache
+C:\Users\User\source\Projects\FullstackWiki\src\FullstackWiki.Domain\obj\Debug\net7.0\FullstackWiki.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\Projects\FullstackWiki\src\FullstackWiki.Domain\obj\Debug\net7.0\FullstackWiki.Domain.AssemblyInfoInputs.cache
+C:\Users\User\source\Projects\FullstackWiki\src\FullstackWiki.Domain\obj\Debug\net7.0\FullstackWiki.Domain.AssemblyInfo.cs
+C:\Users\User\source\Projects\FullstackWiki\src\FullstackWiki.Domain\obj\Debug\net7.0\FullstackWiki.Domain.csproj.CoreCompileInputs.cache
+C:\Users\User\source\Projects\FullstackWiki\src\FullstackWiki.Domain\obj\Debug\net7.0\FullstackWiki.Domain.dll
+C:\Users\User\source\Projects\FullstackWiki\src\FullstackWiki.Domain\obj\Debug\net7.0\refint\FullstackWiki.Domain.dll
+C:\Users\User\source\Projects\FullstackWiki\src\FullstackWiki.Domain\obj\Debug\net7.0\FullstackWiki.Domain.pdb
+C:\Users\User\source\Projects\FullstackWiki\src\FullstackWiki.Domain\obj\Debug\net7.0\ref\FullstackWiki.Domain.dll
