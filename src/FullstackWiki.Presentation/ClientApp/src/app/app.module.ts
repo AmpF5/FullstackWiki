@@ -8,6 +8,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { OverviewComponent } from './navbar/overview/overview.component';
+import { FrontEndComponent } from './navbar/front-end/front-end.component';
+import { BackEndComponent } from './navbar/back-end/back-end.component';
+import { OverallComponent } from './navbar/overall/overall.component';
 
 
 @NgModule({
@@ -15,7 +18,10 @@ import { OverviewComponent } from './navbar/overview/overview.component';
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    OverviewComponent
+    OverviewComponent,
+    FrontEndComponent,
+    BackEndComponent,
+    OverallComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
