@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FullstackWiki.Domain
-build_property.ProjectDir = C:\Users\User\source\Projects\FullstackWiki\src\FullstackWiki.Domain\
+build_property.ProjectDir = c:\Users\User\source\Projects\FullstackWiki\src\FullstackWiki.Domain\

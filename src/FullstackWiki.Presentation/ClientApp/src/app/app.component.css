@@ -1,0 +1,23 @@
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .column-s {
+    flex: 0.5; /* Each column takes an equal portion of space initially */
+    padding: 10px;
+    text-align: center;
+  }
+
+  .column-m {
+    flex: 1.5; /* Each column takes an equal portion of space initially */
+    padding: 10px;
+    text-align: center;
+  }
+
+  .column-l {
+    flex: 3.5;
+    padding: 10px;
+    text-align: center;
+  }
