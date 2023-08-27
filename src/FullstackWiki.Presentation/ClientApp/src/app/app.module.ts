@@ -11,6 +11,7 @@ import { OverviewComponent } from './navbar/overview/overview.component';
 import { FrontEndComponent } from './navbar/front-end/front-end.component';
 import { BackEndComponent } from './navbar/back-end/back-end.component';
 import { OverallComponent } from './navbar/overall/overall.component';
+import { RoutingComponent } from './navbar/front-end/routing/routing.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { OverallComponent } from './navbar/overall/overall.component';
     OverviewComponent,
     FrontEndComponent,
     BackEndComponent,
-    OverallComponent
+    OverallComponent,
+    RoutingComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
