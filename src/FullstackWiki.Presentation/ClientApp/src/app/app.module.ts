@@ -23,7 +23,7 @@ import { RoutingComponent } from './navbar/front-end/routing/routing.component';
     FrontEndComponent,
     BackEndComponent,
     OverallComponent,
-    RoutingComponent
+    RoutingComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

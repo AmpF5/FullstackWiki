@@ -31,9 +31,6 @@ constructor(
   }
 
   toggleChild(section: MainSection<any>, index: number) {
-    console.log(section)
-    this.router.navigate(['home'])
-    // this.router.navigate(['frontend/routing'], {relativeTo: this.route})
     this.router.navigate([section.path + '/' + section.children[index].path], {relativeTo:this.route});
   }
 
@@ -46,7 +43,6 @@ constructor(
         children: this.generateChildren(x.children),
       };
       config.push(route);
-      console.log(config)
     }
     this.router.resetConfig(config);
   }
