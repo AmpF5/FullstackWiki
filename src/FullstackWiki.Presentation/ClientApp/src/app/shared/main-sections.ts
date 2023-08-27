@@ -9,19 +9,16 @@ export const mainSections: MainSection<any>[] = [
     {
         name: 'Front-End',
         component: FrontEndComponent,
-        routerPath: 'frontend',
-        path: '/frontend',
+        path: 'frontend',
     },
     {
         name: 'Back-End',
         component: BackEndComponent,
-        routerPath: 'backend',
-        path: '/backend',
+        path: 'backend',
     },
     {
         name: 'Overall',
         component: OverallComponent,
-        routerPath: 'overall',
-        path: '/overall'
+        path: 'overall',
     },
 ]

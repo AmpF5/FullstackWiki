@@ -23,10 +23,11 @@ export class NavbarComponent implements OnInit {
 
   toggle(index: number) {
     console.log(index)
-    this.router.navigate(['/', this.mainSections[index].routerPath])
+    this.router.navigate(['/', this.mainSections[index].path])
   }
 
   private generateRoutes() {
+    console.log('test')
     const config = this.router.config;
     for (let x of mainSections) {
       let route: Route = {
