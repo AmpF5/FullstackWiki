@@ -1,11 +1,13 @@
 <div>
     <ul class="list-group">
         <div *ngFor="let section of mainSections; let i = index">
-            <li class="list-none">
+            <li class="list-parent">
                 <a class="button">{{ section.name }}</a>
             </li>
             <div *ngFor="let child of section.children; let i = index">
-                <a class="button" (click)="toggleChild(section, i)" routerLink=() routerLinkActive="active-link">{{ child.name }}</a>
+                <div class="list-child">
+                    <a class="button" (click)="toggleChild(section, i)" routerLink=() routerLinkActive="active-link">{{ child.name }}</a>
+                </div>
             </div>
         </div>
     </ul>

@@ -1,0 +1,13 @@
+.list-parent {
+    list-style-type: none;
+    text-align: left;
+    font-size: 16px;
+    /* font-weight: bold; */
+}
+
+.list-child {
+    padding-left: 10;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 14px;
+}

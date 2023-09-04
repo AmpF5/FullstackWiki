@@ -5,19 +5,19 @@
   }
   
   .column-s {
-    flex: 0.5; /* Each column takes an equal portion of space initially */
+    flex: 0.9; /* Each column takes an equal portion of space initially */
     padding: 10px;
     text-align: center;
   }
 
-  .column-m {
-    flex: 1.5; /* Each column takes an equal portion of space initially */
+  .column-xxs {
+    flex: 0.6; /* Each column takes an equal portion of space initially */
     padding: 10px;
     text-align: center;
   }
 
   .column-l {
-    flex: 3.5;
+    flex: 3.0;
     padding: 10px;
     text-align: center;
   }
