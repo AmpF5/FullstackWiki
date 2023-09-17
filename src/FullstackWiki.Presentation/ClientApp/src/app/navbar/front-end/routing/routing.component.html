@@ -14,7 +14,7 @@
     </p>
     <pre><code class="language-ts">let routes: Routes = [
     &#123; path: 'home', component: HomeComponent &#125;,
-    &#123; path: '', redirectTo: '/home', pathMatch: 'full'&#125;,
+    &#123; path: ' ', redirectTo: '/home', pathMatch: 'full'&#125;,
 ];</code></pre>
     <p>Basic routes pattern is <em class="text-file">&#123; <strong>path:</strong> "URL path", <strong>component</strong>: "Component that should be displayed" &#125;</em></p>
     <p>Then you can choose one of few attempts to navigate to another URL. </p>
@@ -25,10 +25,10 @@
         </li>
         <li>
             Another way of routing is via button click (this is approach that I took creating this site)
-            <pre><code>&lt;button (click)="navigateToHome()"&gt;</code></pre>
+            <pre><code class="language-html">&lt;button (click)="navigateToHome()"&gt;</code></pre>
             Then in your component function navigateToHome() need to be implemented.
             First Router is needed, so inject it in constructor, then implement method with help of router.
-            <pre><code class="language-ts codeblock">constructor(private router: Router) &#123;&#125;
+            <pre><code class="language-ts">constructor(private router: Router) &#123;&#125;
 
 navigateToHome() &#123;
     this.router.navigate(['/home']);

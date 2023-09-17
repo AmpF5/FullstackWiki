@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import {HighlightOptions, HighlightResult} from 'highlight.js'
+import hljs from 'highlight.js';
 
 @Component({
   selector: 'app-front-end-routing',
@@ -8,5 +8,7 @@ import {HighlightOptions, HighlightResult} from 'highlight.js'
 })
 export class RoutingComponent implements AfterViewInit{
   ngAfterViewInit(): void {
+    hljs.highlightAll();
+    // hljs.initHighlightingOnLoad();
   }
 }
