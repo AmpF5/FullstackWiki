@@ -4,14 +4,41 @@
 @import 'primeflex-styles.css';
 
 :root{
-  --main-background-color: #101010;
-  --main-foreground-color: #e7dfdd;
-  --border-color: #95A1F9
-  --active-color: #F2F1F2
+  --main-background-color: #264653;
+  --main-foreground-color: #FEFEFA;
+  --secondary-foreground-color: #2A3439; 
+  --border-color: #95A1F9;
+  --active-color: #F2F1F2;
+  --link-primary-color: #F4A261;
+  --text-file-primary-color: #B3E2DC;
 }
 a {
-  color: #0366d6;
+  color: #FEFEFA;
+  text-decoration: none;
+  padding: 3px;
 }
+
+a[href]:hover{
+  text-decoration: none;
+  color: var(--link-primary-color);
+  cursor: pointer;
+
+}
+
+a:hover {
+  text-decoration: none;
+  color: #FEFEFA;
+  cursor: default;
+}
+
+a[href].text-link {
+  color: var(--link-primary-color);
+}
+
+a[href].text-link:hover {
+  color: #E76F51;
+}
+
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
@@ -44,5 +71,40 @@ body {
 p, h1, h2, h3, h4 {
   color: var(--main-foreground-color);
 }
+strong {
+  color: #E76F51;
+}
 
+
+.text-content {
+    text-align: left;
+    padding: 10px;
+}
+
+.text-file {
+  background-color: #1861ac;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+  background-color: var(--text-file-primary-color);
+  color: var(--secondary-foreground-color);
+}
+/* 
+pre {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-left: 3px solid #f36d33;
+  color: #666;
+  page-break-inside: avoid;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  word-wrap: break-word;
+}
+ */
 

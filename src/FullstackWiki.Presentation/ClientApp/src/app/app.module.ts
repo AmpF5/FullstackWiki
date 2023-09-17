@@ -12,7 +12,7 @@ import { FrontEndComponent } from './navbar/front-end/front-end.component';
 import { BackEndComponent } from './navbar/back-end/back-end.component';
 import { OverallComponent } from './navbar/overall/overall.component';
 import { RoutingComponent } from './navbar/front-end/routing/routing.component';
-
+import {HighlightModule, HIGHLIGHT_OPTIONS, HighlightOptions} from 'ngx-highlightjs'
 
 @NgModule({
   declarations: [
@@ -31,9 +31,21 @@ import { RoutingComponent } from './navbar/front-end/routing/routing.component';
     FormsModule,
     AppRoutingModule,
   ],
-  providers: [
+  providers: [{
+    provide: HIGHLIGHT_OPTIONS,
+    useValue:<HighlightOptions>{
+      coreLibraryLoader:() => import('highlight.js/lib/core'),
+      languages: {
+        typescript: () => import('highlight.js/lib/languages/typescript'),
+        css: () => import('highlight.js/lib/languages/css'),
+        xml: () => import('highlight.js/lib/languages/xml'),
+        csharp: () => import('highlight.js/lib/languages/csharp')
+      },
+      themePath: 'src/styles/atom-one-dark.css'
+    }
+  }
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent] 
 })
 export class AppModule { }
 
