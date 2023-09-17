@@ -14,10 +14,24 @@
     flex: 0.6; /* Each column takes an equal portion of space initially */
     padding: 10px;
     text-align: center;
+    height: 100%;
+    /*TODO: change in future to dynamic size*/
+    height: 700px;
   }
 
   .column-l {
     flex: 3.0;
     padding: 10px;
     text-align: center;
+  }
+
+  .navbar-border {
+    top: 10px;
+    border: 1px solid #E76F51;
+    border-top: none;
+    padding: 10px;
+  }
+
+  .top-navbar {
+    border-bottom: 1px solid #E76F51;
   }

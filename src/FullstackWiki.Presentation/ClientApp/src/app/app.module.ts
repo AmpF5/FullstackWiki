@@ -13,7 +13,6 @@ import { BackEndComponent } from './navbar/back-end/back-end.component';
 import { OverallComponent } from './navbar/overall/overall.component';
 import { RoutingComponent } from './navbar/front-end/routing/routing.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +32,7 @@ import { RoutingComponent } from './navbar/front-end/routing/routing.component';
   ],
   providers: [
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent] 
 })
 export class AppModule { }
 

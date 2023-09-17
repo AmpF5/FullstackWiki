@@ -1,18 +1,31 @@
 <body>
- 
+  <div class="flex card-container top-navbar">
+      <div class="flex-grow-1 flex align-items-center justify-content-center m-2 px-5 py-3 border-round">LOGO</div>
+      <div class="flex-grow-1 flex align-items-center justify-content-center m-2 px-5 py-3 border-round">CONTENT</div>
+      <div class="flex-grow-1 flex align-items-center justify-content-center m-2 px-5 py-3 border-round">LINKS</div>
+  </div>
   <div class="flex-container">
-    <div class="column-s">1</div>
-    <div class="column-xxs">
+    <div class="column-s">
+      1
+    </div>
+
+    <div class="column-xxs navbar-border">
       <app-navbar></app-navbar>
     </div>
-    <div class="div">
-      <div style="border-left:1px solid #000;height:700px"></div>
-    </div>
-    <div class="column-l"><router-outlet></router-outlet></div>
-    <div class="column-xxs">
 
+    <div class="div">
     </div>
-    <div class="column-s">1</div>
+
+    <div class="column-l">
+      <router-outlet></router-outlet>
+    </div>
+
+    <div class="column-xxs">
+    </div>
+
+    <div class="column-s">
+      1
+    </div>
   </div>
   
 </body>
