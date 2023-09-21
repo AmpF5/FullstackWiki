@@ -38,6 +38,49 @@ navigateToHome() &#123;
     <br>
     <h3>Dynamic Routing</h3>
     <p>Dynamic Routing is very useful when it comes to routing to specific <em>id/tag/user/item.</em> You can define a base route and then display context based of on url.</p>
+    First define route in <em class="text-file">app-routing.module.ts</em>
+    <pre><code class="language-ts">&#123; path: 'frontend/routing/details/:id', component: RoutingComponent&#125;</code></pre>
+    The <em class="text-file">:id</em> determinate which part of route should be replaced. <br>
+    In your <em class="text-file">component.ts</em> Add Router in constructor add implement an event when navigation should be executed. In example below I implemented on button click. 
+    <pre><code class="language-ts">constructor(private router: Router)&#123;
+    &#125;
+  
+protected navigate(id: number) &#123;
+    this.router.navigate(['frontend/routing/details/', id])
+&#125;</code></pre>
+    <p>I used simple and basic routing but the idea is similar when you want to implement more complicated routes. Here I specifically type whole route because of the fact that this app handles routing in different way which I explain later</p>
+    Here are some examples:
+    <ol>
+        <button class="btn btn-primary" (click)="navigate(1)">Example 1</button>
+        <button class="btn btn-primary" (click)="navigate(2)">Example 2</button>
+        <button class="btn btn-primary" (click)="navigate(3)">Example 3</button>
+    </ol>
+    <p>As you can see in your URL, each button navigates to different page with specific Id.</p>
     <h3>Child Routes</h3>
-    <p>Next step in routing is adding child routes. Child routing helps with organize paths and gives them hierarchy so user can see the actual path of view.</p>
+    <p>Next step in routing is adding child routes. Child routing helps with organize paths and gives them hierarchy so user can see the actual path of view. <br>
+    First of all define in <em class="text-file">app-routing.module.ts</em> your child routes. </p>
+    <pre><code class="language-ts">&#123; path: 'frontend/routing', component: RoutingComponent, children:[
+    &#123;path: 'firstChild', component: RoutingComponent&#125;,
+    &#123;path: 'secondChild', component: RoutingComponent&#125;
+]&#125;</code></pre>
+        <p>Next in component that's gonna handle routing, import ActivatedRoute from @angular/router and inject it in constructor. Then create functions to handle routing navigation</p>
+        <pre><code class="language-ts">constructor(private router: Router, private route: ActivatedRoute)&#123;         
+&#125;
+
+protected navigateToFirstChild() &#123;
+    this.router.navigate(['firstChild'], &#123;relativeTo: this.route&#125;);
+&#125;
+
+protected navigateToSecondChild() &#123;
+    this.router.navigate(['secondChild'], &#123;relativeTo: this.route&#125;);
+&#125;</code></pre>
+    Here are some examples:
+    <ol>
+        <button class="btn btn-primary" (click)="navigateToFirstChild()">First Child</button>
+        <button class="btn btn-primary" (click)="navigateToSecondChild()">Second Child</button>
+    </ol>
+    <p>As you can see the URL is changed after clicking a button. In those two examples I used the same component for parent and child, and also for details. But there isn't anything that's stops you from using a different one.</p>
+    <h3>How routing is handled in this application</h3>
+    <p>First of all this app mostly depends on navbar on left side. I assumed that I'm gonna need a lot of subsites, so I want to make a quick way to add them, and don't need to worry about adding them in navbar component and routing. So I came with this idea. <br>
+    I created two models, first for main sections(frontend, backend, overall) and second for sub sections(for any subsection of main section like this) </p>
 </div>
